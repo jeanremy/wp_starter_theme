@@ -1,0 +1,18 @@
+/*!
+Theme Name: Wordpress Starter Theme
+Theme URI: github/jeanremy/wp_starter_theme
+Description: An HTML5 - bootstrap-based starter theme
+Author: JR
+Author URI: http://www.jeanremypraud.com
+Version: 1.0
+Tags: Bootstrap, HTML5 boilerplate, Initializr
+
+License:
+License URI:
+
+General comments (optional).
+*/
+/*test*/
+body {
+  margin: 0;
+}
