@@ -1,4 +1,6 @@
-wp_starter_theme
-================
+#Un thème de départ pour Wordpress#
 
-A starter theme based on HTML5 boilerplate, Bootstrap, with Sass support.
+Une déclinaison de ['workflow init'](https://github.com/jeanremy/workflow_init)
+
+For install, see ('readme')[https://github.com/jeanremy/workflow_init/blob/master/readme.md]
+

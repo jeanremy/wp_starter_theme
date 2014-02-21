@@ -1,0 +1,32 @@
+/*
+	Kickstart files for html/css project. Based on Kaelig documentation (blog.kaelig.fr) and on sass
+*/
+
+//@import "reset";
+test{font: test;}
+
+//Colors
+
+$primary: #dd5b6a;
+$secondary: #B4B4BE;
+$bodycolor: #63636d;
+
+
+@import "typo";
+@import "forms";
+@import "global";
+
+
+/*  MAIN
+	====  */
+body {
+	color: $primary;
+}
+
+
+
+@import "mediaqueries";
+@import "print";
+
+
+

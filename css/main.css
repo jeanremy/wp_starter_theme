@@ -1,0 +1,52 @@
+/*
+	Kickstart files for html/css project. Based on Kaelig documentation (blog.kaelig.fr) and on sass
+*/
+test {
+  font: test;
+}
+
+/*  TYPOGRAPHY
+	==========  */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4em;
+  /* equiv 14px */
+}
+
+/*  FORMS
+	=====  */
+/*
+	GLOBALS
+	=======
+*/
+:selection {
+  color: #fff;
+  background-color: #dd5b6a;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #dd5b6a;
+}
+
+a {
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+/*  MAIN
+	====  */
+body {
+  color: #dd5b6a;
+}
+
+/*  MEDIA QUERIES
+	=============  */
+/*  PRINT
+	=====  */
+p {
+  font-size: 13px;
+}
