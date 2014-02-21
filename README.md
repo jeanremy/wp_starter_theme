@@ -1,6 +1,6 @@
 #Un thème de départ pour Wordpress#
 
-Une déclinaison de ['workflow init'](https://github.com/jeanremy/workflow_init)
+Just php files with basic function to quickly jump into a WP project
 
-For install, see ('readme')[https://github.com/jeanremy/workflow_init/blob/master/readme.md]
+For full install, see ('readme')[https://github.com/jeanremy/workflow_init/blob/master/readme.md]
 
