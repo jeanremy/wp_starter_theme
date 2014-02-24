@@ -44,30 +44,29 @@ function my_disable_admin_bar() {
 add_action( 'init', 'my_disable_admin_bar' , 9 );
 
 
-#-----------------------------------
-# 		HEADER	INCLUDES
-#-----------------------------------
-add_action('init', 'add_custom_styles');
 
-function add_custom_styles() {
-	wp_deregister_script( 'jquery' ); 
-	wp_enqueue_style( 'main', get_template_directory_uri() . '/css/main.min.css' );
+#-----------------------------------
+# 		CSS / JS
+#-----------------------------------
+
+//Deregister jquery
+add_action('init', 'theme_deregister_jquery');
+function theme_deregister_jquery() {
+	wp_deregister_script( 'jquery' );
 }
 
-
-#-----------------------------------
-# 		FOOTER	INCLUDES
-#-----------------------------------
-add_action('init', 'add_custom_scripts');
-
-function add_custom_scripts() {
+add_action('wp_enqueue_scripts', 'theme_add_custom_scripts');
+function theme_add_custom_scripts() {
+	
+	wp_register_style('main_css', get_template_directory_uri() . '/css/main.min.css');
 	wp_register_script('jquery', get_template_directory_uri() . '/js/vendor/jquery.min.js', '', '', true);
 	wp_register_script('bootstrap_js', get_template_directory_uri() . '/js/vendor/bootstrap.min.js', '', '', true);
-	wp_register_script('main_js', get_template_directory_uri() . '/js/main.min.js', array('jquery', 'bootstrap_js'), '', true);
-	
-	//Load jquery & bootstrap, because of dependencies
+	wp_register_script('main_js', get_template_directory_uri() . '/js/main.min.js', array('jquery', 'bootstrap_js'), '', true );
+
+	wp_enqueue_style('main_css');
 	wp_enqueue_script('main_js');
 }
+
 
 
 

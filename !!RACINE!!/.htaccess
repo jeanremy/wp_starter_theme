@@ -1,0 +1,39 @@
+Options -Indexes  
+
+#Begin gzip and deflate
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/x-javascript text/plain text/xml image/x-icon
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch ".(js|css|xml|gz|html)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html M3600
+    ExpiresByType text/css M3600
+    ExpiresByType application/x-javascript M3600
+    ExpiresByType image/bmp M3600
+    ExpiresByType image/gif M3600
+    ExpiresByType image/x-icon M3600
+    ExpiresByType image/jpeg M3600
+</IfModule>
+
+# protect wpconfig.php  
+<files wp-config.php>  
+order allow,deny  
+deny from all  
+</files>  
+# protect readme.html  
+<files readme.html>  
+order allow,deny  
+deny from all  
+</files>  
+# protect .htaccess  
+<files .htaccess>  
+order allow,deny  
+deny from all  
+</files> 
