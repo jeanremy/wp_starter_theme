@@ -31,6 +31,10 @@
 
         <!--CSS & JS-->
         <?php wp_head(); ?>
+         <!--[if lt IE 9]>
+            <script src="js/vendor/respond.min.js"></script>
+            <script src="js/vendor/html5shiv.min.js"></script>
+        <![endif]-->
         <script src="<?php echo get_template_directory_uri(); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
 
