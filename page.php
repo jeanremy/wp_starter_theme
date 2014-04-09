@@ -6,8 +6,6 @@
 			<article id="post-<?php the_ID(); ?>" role="article">
 				<header class="article_header">
 					<h1 class="page_title"><?php the_title(); ?></h1>
-					<p class='post_metadata'><?php print 'Ecrit le ' . the_time( 'Y-m-j' ) . ' à ' the_time('H:i') . ' par ' . the_author() . ' dans ' . the_category(', ');
-					?></p>
 				</header> <!-- end article header -->
 
 				<section class="clearfix">
