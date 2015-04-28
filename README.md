@@ -2,5 +2,7 @@
 
 Just php files with basic function to quickly jump into a WP project
 
-For full install, see ('readme')[https://github.com/jeanremy/workflow_init/blob/master/readme.md]
+First: Rename folder & theme in style.css
+Second: Change screenshot
+Third: Activate theme
 

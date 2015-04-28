@@ -42,22 +42,15 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-		<div id="container">
 
-			<header class="header" role="banner">
-
-				<div id="inner-header" class="wrap clearfix">
-
-					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
+        <header class="header" role="banner">
 
 
-					<nav role="navigation">
-					</nav>
+            <!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
+            <p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
 
-				</div> <!-- end #inner-header -->
+            <nav role="navigation">
+            </nav>
 
-			</header> <!-- end header -->
+
+        </header> <!-- end header -->
