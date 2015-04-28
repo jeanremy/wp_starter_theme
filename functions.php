@@ -77,6 +77,33 @@ function theme_add_custom_scripts() {
 }
 
 
+#-----------------------------------
+#		CUSTOM QUERIES & UTILITIES
+#-----------------------------------
+
+
+//Page Slug Body Class
+function add_slug_body_class( $classes ) {
+	global $post;
+	if ( isset( $post ) ) {
+		$newclasses[] = $post->post_name;
+	} 
+	return $newclasses;
+}
+
+add_filter( 'body_class', 'add_slug_body_class' );
+
+
+/* A function to encode email takaen from David Walsh : http://davidwalsh.name/php-email-encode-prevent-spam*/
+/* see also https://codex.wordpress.org/Function_Reference/antispambot */
+function encode_email($e) {
+	$output= '';
+	for ($i = 0; $i < strlen($e); $i++) { 
+		$output .= '&#'.ord($e[$i]).';'; 
+	}
+	return $output;
+}
+
 
 
 

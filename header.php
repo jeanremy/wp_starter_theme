@@ -6,8 +6,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?php bloginfo('name'); ?></title>
-        <meta name="description" content="">
+        <title>
+            <?php echo wp_title(""); ?>
+        </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--Favicons & tiles-->
@@ -27,15 +28,6 @@
         <meta name="msapplication-TileColor" content="#fafafa">
         <meta name="msapplication-TileImage" content="/img/favicon/win8-tile-icon-144x144.png">
 
-        <!--Facebook-->
-        <meta property="og:title" content="" />
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="">
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="/img/favicon/facebook-icon.png" />
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="600">
-        <meta property="og:image:height" content="400">
 
         <!--CSS & JS-->
         <?php wp_head(); ?>
