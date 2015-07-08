@@ -3,10 +3,7 @@
 #-----------------------------------
 # 		WP OPTIONS
 #-----------------------------------
-$options = get_option('_theme_options');
-define('FB_ID', $options['fb_id']);
-define('FB_API', $options['fb_app_id']);
-define('TWITTER_ID', $options['tw_id']);
+$options = get_fields('option');
 
 
 #-----------------------------------
