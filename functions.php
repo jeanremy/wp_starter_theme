@@ -104,6 +104,28 @@ function encode_email($e) {
 	return $output;
 }
 
+#------------------------------------
+# 		OPTION PAGE ACF
+#------------------------------------
+if( function_exists('acf_add_options_page') ) {
+ 
+	$page = acf_add_options_page(array(
+		'page_title' 	=> 'Titre de la page',
+		'menu_title' 	=> 'Titre dans le menu',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability' 	=> 'edit_posts',
+		'redirect' 		=> false
+	));
+
+
+	// Deuxième sous-page
+	// acf_add_options_sub_page(array(
+	// 	'page_title'    => 'Abonnements',
+	// 	'menu_title'    => 'Abonnements',
+	// 	'parent_slug'   => 'theme-general-settings',
+	// ));
+
+}
 
 
 
